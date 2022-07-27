@@ -1,3 +1,5 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTkwMzMxNjR9.jpuV-85ojmFpOyFz6Jtz3DlUHf6cGuVO09HPMJz03ec
+
 POST http://localhost:3000/users.json
 Content-Type: application/json
 
@@ -15,4 +17,13 @@ Content-Type: application/json
 {
   "email": "test@test.com",
   "password": "password"
+}
+
+###
+POST http://localhost:3000/users/1/groups
+
+Content-type: application/json
+
+{
+  "name": "Ultimate"
 }
