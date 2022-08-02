@@ -1,5 +1,8 @@
 {
   id: @user.id,
+  email: @user.email,
+  restaurants: @user.restaurants,
+  groups: @user.group,
   created_at: @user.created_at,
   updated_at: @user.updated_at
 }
