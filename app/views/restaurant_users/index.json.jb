@@ -1,0 +1,6 @@
+@restaurant_users.map do |restaurant_user|
+  {
+    id: restaurant_user.id,
+    url: restaurant_user_url(restaurant_user, format: :json)
+  }
+end

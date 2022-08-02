@@ -11,4 +11,16 @@ class RestaurantsController < ApplicationController
     render json: restaurant
   end
 
+  def create
+    restaurant = Restaurant.new(
+      name: params[:name],
+      cuisines: params[:cuisines],
+      address: params[:address],
+      image: params[:image],
+      location_id: params[:location_id],
+      hours: params[:hours]
+    )
+    restaurant.save
+    render json: restaurant
+  end
 end
