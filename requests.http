@@ -34,5 +34,5 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 ###
-GET http://localhost:3000/users/1/restaurants
+GET http://localhost:3000/users/1/restaurants/2
 Authorization: Bearer {{jwt}}
