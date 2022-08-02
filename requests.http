@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTkwMzMxNjR9.jpuV-85ojmFpOyFz6Jtz3DlUHf6cGuVO09HPMJz03ec
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTk0ODUzNTR9.7uL7R_ao9fVoiMMLjXB8Bd2uQMir_O8m29EEDISpx1s
 
 POST http://localhost:3000/users.json
 Content-Type: application/json
@@ -20,10 +20,15 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:3000/users/1/groups
+POST http://localhost:3000/users/groups
 
 Content-type: application/json
 
 {
   "name": "Ultimate"
 }
+
+###
+GET http://localhost:3000/users/2
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
